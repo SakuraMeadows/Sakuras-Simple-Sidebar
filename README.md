@@ -6,13 +6,25 @@
   A simple Firefox theme using Sidebery sidebar.
 </h2>
 
+## Preview
+
+![](https://i.imgur.com/O23LgF3.png)
+![](https://i.imgur.com/teww0lQ.png)
+![](https://i.imgur.com/hoOinYk.png)
+![](https://i.imgur.com/aGs78zK.png)
+
 ## Getting Started
+
+**Note: This theme is meant as a vertical tabs Firefox theme, however, it is possible to enable horizontal tabs as a fallback. I have not put much work into the horizontal tabs yet as it is currently meant to be used temporarily as a fallback if the vertical tabs stop working**
 
 Follow these steps to install the theme:
 
 1. **Open** Firefox
 2. **Install** the [`Sidebery`](https://addons.mozilla.org/en-US/firefox/addon/sidebery/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) extension from the Firefox extension store.
-3. In the adress bar, **Type** `about:config`, then press <kbd>Enter</kbd>.
+3. In the address bar (aka Search bar, or URL bar), **Type** `about:config`, then press <kbd>Enter</kbd>.
+
+![](https://i.imgur.com/W6MwLA1.png)
+
 4. If a warning page appears, **click** `Accept the Risk and Continue` to access the `about:config` page.
 5. **Search** for the following preferences using the search bar at the top of the `about:config` page, and **ensure** the following preferences are `true`:
 
@@ -24,7 +36,11 @@ Follow these steps to install the theme:
    - `sidebar.revamp`
 
 6. <kbd>Right Click</kbd> on the Sidebery extension icon in the top bar, `Open Settings`.
-7. On the left side, **Click** `Styles Editor` then input this css:
+7. On the left side, **Click** `Styles Editor`
+
+![](https://i.imgur.com/1onXJAM.png)
+
+Then **copy** this css and **paste** it into the styles editor:
 - If using the `amoledDarkTheme`
 ```css
 #nav_bar{
@@ -34,6 +50,9 @@ Follow these steps to install the theme:
 	--s-frame-bg: #000000;
     --s-frame-fg: #fcbccd;
 	--s-act-el-fg: #fcbccd;
+}
+.Tab{
+	--tabs-activated-bg: #111111;
 }
 .ScrollBox{
 	--scroll-color: #111111;
@@ -49,6 +68,9 @@ Follow these steps to install the theme:
     --s-frame-fg: #fcbccd;
 	--s-act-el-fg: #fcbccd;
 }
+.Tab{
+	--tabs-activated-bg: #181825;
+}
 .ScrollBox{
 	--scroll-color: #181825;
 }
@@ -63,6 +85,9 @@ Follow these steps to install the theme:
     --s-frame-fg: #fcbccd;
 	--s-act-el-fg: #fcbccd;
 }
+.Tab{
+	--tabs-activated-bg: #414559;
+}
 .ScrollBox{
 	--scroll-color: #414559;
 }
@@ -74,33 +99,38 @@ Follow these steps to install the theme:
 }
 #root_container{
 	--s-frame-bg: #eff1f5;
-    --s-frame-fg: #fcbccd;
-	--s-act-el-fg: #fcbccd;
+  --s-frame-fg: #ca56ab;
+	--s-act-el-fg: #ca56ab;
+}
+.Tab{
+	--tabs-activated-bg: #e6e9ef;
 }
 .ScrollBox{
-	--scroll-color: #e6e9ef;
+	--scroll-color: #181825;
 }
 ```
 - Then **Replace** both `#fcbccd` with your accent color if different.
 
 - Optionally, in `General` settings, **Disable** "Use Native Scroll-bars" to hide the scroll bar entirely.
-
-9. **Type** `about:profiles` in the address bar and press <kbd>Enter</kbd>.
-10. **Look for** the in-use profile, or otherwise the profile you wish to theme, and **click** `Open Folder` on the section labeled `Root Directory`.
-11. **Download** the `chrome.zip` file from the [**latest release**](https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar/releases/latest).
-12. **Extract** the contents of `chrome.zip` into your Firefox profile directory. Ensure the file structure is as follows: Firefox > Profiles > [profile] > chrome > [css files]
-13. If you are on **Windows** open the `userChrome.css` file, If you are on **Linux** ignore this step.
-- By default the window controls are set up for Linux as I assume that is where people are more likely to theme Firefox, to change it for windows, simply **Uncomment**  `noTablineWindows.css` by removing the `/*` and `*/` on either end, then **Comment** out `noTablineLinux.css` by placing `/*` at the beginning and `*/` at the end.
+![](https://i.imgur.com/tHm2KlI.png)
+8. **Type** `about:profiles` in the address bar, as done before with `about:config`, and press <kbd>Enter</kbd>.
+9. **Look for** the in-use profile, or otherwise the profile you wish to theme, and **click** `Open Folder` on the section labeled `Root Directory`.
+![](https://i.imgur.com/BOWQZSL.png)
+10. **Download** the `chrome.zip` file from the [**latest release**](https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar/releases/latest).
+11. **Extract** the contents of `chrome.zip` into your Firefox profile directory. Ensure the file structure is as follows: Firefox > Profiles > [profile] > chrome > [css files]
+12. If you are on **Linux** open the `userChrome.css` file, If you are on **Windows** ignore this step.
+- By default the window controls are set up for Windows, to change it for linux, simply **Uncomment**  `noTablineLinux.css` by removing the `/*` and `*/` on either end, then **Comment** out `noTablineWindows.css` by placing `/*` at the beginning and `*/` at the end.
 ```css
 @import "hideBookmarks.css";
 /*@import "noTablineWindows.css";*/
 @inpurt "noTablineLinux.css";
 ```
-14. **Restart** Firefox to apply the changes.
+13. **Restart** Firefox to apply the changes.
 
 ## Support & Suggestions
 
 If you have any **suggestions** or **bug reports** please create an issue at [GitHub Issues](https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar/issues) so I can further improve the theme!
+This is my first ever Firefox theme, in fact this is the first time I have used css in general, so any help would be greatly appreciated!
 
 ## Default Customization
 
