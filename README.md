@@ -116,6 +116,8 @@ Then **copy** this css and **paste** it into the styles editor:
 8. **Type** `about:profiles` in the address bar, as done before with `about:config`, and press <kbd>Enter</kbd>.
 9. **Look for** the in-use profile, or otherwise the profile you wish to theme, and **click** `Open Folder` on the section labeled `Root Directory`.
 ![](https://i.imgur.com/rtZVSdW.png)
+**If you are on Linux and the `Open Folder` button does not work, check this path: `/home/<user>/.var/app/org.mozilla.firefox/.mozilla/firefox/<profile>`** or submit [an issue.](https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar/issues)
+
 10. **Download** the `chrome.zip` file from the [**latest release**](https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar/releases/latest).
 11. **Extract** the contents of `chrome.zip` into your Firefox profile directory. Ensure the file structure is as follows: Firefox > Profiles > [profile] > chrome > [css files]
 12. If you are on **Linux** open the `userChrome.css` file, If you are on **Windows** ignore this step.
