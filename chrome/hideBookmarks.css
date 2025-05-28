@@ -1,0 +1,11 @@
+/* Hide bookmarks bar unless hovering */
+#PersonalToolbar{
+    max-height: 0 !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    transition: all 100ms ease 100ms !important;
+}
+#navigator-toolbox:hover #PersonalToolbar{
+    max-height: 30px !important;
+    opacity: 1 !important;
+}

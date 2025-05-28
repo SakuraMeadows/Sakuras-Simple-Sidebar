@@ -1,0 +1,28 @@
+/* Sidebar Expand on Hover, otherwise Shrink */
+#sidebar-box{
+    --sidebar-width: 40px;
+    --sidebar-hover-width: 250px;
+    min-width: var(--sidebar-width) !important;
+    max-width: var(--sidebar-width) !important;
+    transition: all 200ms ease !important;
+}
+#sidebar-box:hover{
+    min-width: var(--sidebar-hover-width) !important;
+    max-width: var(--sidebar-hover-width) !important;
+}
+#sidebar-splitter{
+  display: none !important;
+}
+
+/* Curve between sidebar and navbar */
+:root:not([sizemode="fullscreen"]) .browserStack > browser{
+    clip-path: xywh(0 0 100% 100% round 9px);
+}
+.browserContainer, .browserStack, #browser {
+    background-color: var(--background-color) !important;
+}
+
+/* Hide Sidebery Topbar */
+#sidebar-header{
+  display: none !important;
+}

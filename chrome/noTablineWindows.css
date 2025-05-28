@@ -1,0 +1,26 @@
+/* Remove Tabline */
+#TabsToolbar .toolbar-items{
+    display: none !important;
+}
+:root:not([inFullscreen]) toolbar#nav-bar{
+    z-index: 1 !important;
+    position: relative !important;
+    margin-left: 0px !important;
+    margin-right: 135px !important; 
+}
+#TabsToolbar.browser-toolbar{
+    display: inline-block !important;
+    position: absolute !important;
+    right: 0px !important;
+}
+.titlebar-buttonbox{
+    flex-direction: row !important;
+    margin-top: 6px
+}
+.toolbarbutton-icon{
+    color: var(--accent-color) !important;
+}
+#TabsToolbar{
+    height: 40px !important;
+    background: var(--background-color) !important;
+}

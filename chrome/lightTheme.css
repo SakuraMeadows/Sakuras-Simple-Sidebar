@@ -1,0 +1,7 @@
+:root{
+  --background-color: #eff1f5;
+  --background-color2: #e6e9ef;
+  --background-color3: #eff1f5;
+  --link-color: #04a5e5 !important;
+  --accent-color: var(--accent-color-light) !important;
+}

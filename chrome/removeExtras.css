@@ -1,0 +1,18 @@
+/* Hide save to pocket button */
+#save-to-pocket-button{
+  display: none !important;
+}
+
+/* Remove extra context menu items */
+#context-pocket, /* Save page to Pocket */
+#sidebar-button, /* ... It's the sidebar button' */
+#context-sendimage, /* Email Image */
+#context-savelinktopocket, /* Save link to Pocket */
+#context-sep-setbackground, #context-setDesktopBackground /* Set Image as Desktop Background */{
+    display: none !important;
+}
+
+/* Remove the border at the bottom of the bookmarks bar */
+#navigator-toolbox{
+    border-bottom: none !important;
+}

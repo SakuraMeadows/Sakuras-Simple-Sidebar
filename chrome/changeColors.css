@@ -1,0 +1,97 @@
+/* Change color of toolbar elements */
+#TabsToolbar{
+  background: var(--background-color3) !important;
+  height: 150px !important;
+}
+#tabbrowser-arrowscrollbox > .tabbrowser-tab{
+  background: var(--background-color2) !important;
+  margin: 4px 2px 0px 2px !important;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+}
+#nav-bar, #PersonalToolbar{
+  background: var(--background-color) !important;
+}
+#urlbar{
+  background: ver(--background-color2) !important;
+  color: var(--accent-color) !important;
+  border-radius: 5px !important;
+}
+#urlbar:hover{
+  outline: 2px solid var(--accent-color) !important;
+  border-radius: 5px !important;
+}
+
+/* Change Color of App Menu Seperator */
+#appMenu-fxa-separator{
+  border-image: linear-gradient(90deg, var(--accent-color) 0%, lch(from var(--accent-color) l c calc(h - 100)) 100%) 1 !important;
+}
+
+/* Change color of right click context menu */
+.menupopup-arrowscrollbox{
+  background-color: var(--background-color) !important;
+  color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+/* Change Color of Selected Tab */
+#tabbrowser-arrowscrollbox > .tabbrowser-tab[selected="true"]{
+  background: var(--background-color) !important;
+}
+/* Remove Selection highlight over Selected Tab */
+.tabbrowser-tab[selected="true"] > .tab-stack > .tab-background{
+  display: none !important;
+}
+
+/* Change color of urlbar pupup background */
+#urlbar-background{
+  background: var(--background-color) !important;
+}
+
+/* Color icons */
+#nav-bar-customization-target toolbarbutton .toolbarbutton-icon,
+#PanelUI-menu-button .toolbarbutton-icon,
+#fxa-toolbar-menu-button > stack{
+  fill: var(--accent-color) !important;
+}
+
+/* Force tabs to stay the same color when the window is inactive */
+#TabsToolbar:-moz-window-inactive {
+    background-color: --background-color3 !important;
+    opacity: 1 !important;
+}
+
+/* Change color of Downloads and Extensions popup menus*/
+#downloadsPanel-mainView,
+#unified-extensions-view{
+  background-color: var(--background-color) !important;
+  color: var(--accent-color) !important;
+}
+
+/* Change Color of Popup Windows*/
+slot{
+  background-color: var(--background-color) !important;
+  color: var(--accent-color) !important;
+  border-radius: 10px !important;
+  border-width: 2px !important;
+}
+slot:hover{
+  border-color: var(--accent-color) !important;
+}
+
+/* Change color of bookmarks bar text */
+#PlacesToolbar{
+  color: var(--accent-color) !important;
+}
+/* Change color of bookmarks bar icons */
+.toolbarbutton-icon{
+  fill: var(--accent-color) !important;
+}
+
+/* Change the color of the little box in the address bar */
+#identity-box,
+#identity-icon-box,
+#urlbar-searchmode-switcher{
+  background-color: var(--background-color2) !important;
+  color: var(--accent-color) !important;
+}
