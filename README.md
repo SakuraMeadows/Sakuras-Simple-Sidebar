@@ -8,10 +8,7 @@
 
 ## Preview
 
-![](https://i.imgur.com/O23LgF3.png)
-![](https://i.imgur.com/teww0lQ.png)
-![](https://i.imgur.com/hoOinYk.png)
-![](https://i.imgur.com/aGs78zK.png)
+![](https://i.imgur.com/qRjd5wI.gif)
 
 ## Getting Started
 
@@ -35,99 +32,29 @@ Follow these steps to install the theme:
 	**ensure** the following preferences are `false`:
    - `sidebar.revamp`
 
-6. <kbd>Right Click</kbd> on the Sidebery extension icon in the top bar, `Open Settings`.
-7. On the left side, **Click** `Styles Editor`
+6. **Download** and **Extract** the `sidebery.zip` file from the [**latest release**](https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar/releases/latest).
+7. <kbd>Right Click</kbd> on the Sidebery extension icon in the top bar, `Open Settings`.
+8. On the left side, **Click** `Help` and then `Import Addon Data`.
 
-![](https://i.imgur.com/1onXJAM.png)
-
-Then **copy** this css and **paste** it into the styles editor:
-- If using the `amoledDarkTheme`
-```css
-#nav_bar{
-	display: none;
-}
-#root_container{
-	--s-frame-bg: #000000;
-    --s-frame-fg: #fcbccd;
-	--s-act-el-fg: #fcbccd;
-}
-.Tab{
-	--tabs-activated-bg: #111111;
-}
-.ScrollBox{
-	--scroll-color: #111111;
-}
-```
-- If using the `darkerTheme`
-```css
-#nav_bar{
-	display: none;
-}
-#root_container{
-	--s-frame-bg: #11111b;
-    --s-frame-fg: #fcbccd;
-	--s-act-el-fg: #fcbccd;
-}
-.Tab{
-	--tabs-activated-bg: #181825;
-}
-.ScrollBox{
-	--scroll-color: #181825;
-}
-```
-- If using the `darkTheme`
-```css
-#nav_bar{
-	display: none;
-}
-#root_container{
-	--s-frame-bg: #303446;
-    --s-frame-fg: #fcbccd;
-	--s-act-el-fg: #fcbccd;
-}
-.Tab{
-	--tabs-activated-bg: #414559;
-}
-.ScrollBox{
-	--scroll-color: #414559;
-}
-```
-- If using the `lightTheme`
-```css
-#nav_bar{
-	display: none;
-}
-#root_container{
-	--s-frame-bg: #eff1f5;
-  --s-frame-fg: #ca56ab;
-	--s-act-el-fg: #ca56ab;
-}
-.Tab{
-	--tabs-activated-bg: #e6e9ef;
-}
-.ScrollBox{
-	--scroll-color: #181825;
-}
-```
-- Then **Replace** both `#fcbccd` with your accent color if different.
-
+![](https://i.imgur.com/IQ8P3iQ.png)
+Then select the downloaded file. This file does not need to be kept after installation.
 - Optionally, in `General` settings, **Disable** "Use Native Scroll-bars" to hide the scroll bar entirely.
 ![](https://i.imgur.com/tHm2KlI.png)
-8. **Type** `about:profiles` in the address bar, as done before with `about:config`, and press <kbd>Enter</kbd>.
-9. **Look for** the in-use profile, or otherwise the profile you wish to theme, and **click** `Open Folder` on the section labeled `Root Directory`.
+9. **Type** `about:profiles` in the address bar, as done before with `about:config`, and press <kbd>Enter</kbd>.
+10. **Look for** the in-use profile, or otherwise the profile you wish to theme, and **click** `Open Folder` on the section labeled `Root Directory`.
 ![](https://i.imgur.com/rtZVSdW.png)
 **If you are on Linux and the `Open Folder` button does not work, check this path: `/home/<user>/.var/app/org.mozilla.firefox/.mozilla/firefox/<profile>`** or submit [an issue.](https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar/issues)
 
-10. **Download** the `chrome.zip` file from the [**latest release**](https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar/releases/latest).
-11. **Extract** the contents of `chrome.zip` into your Firefox profile directory. Ensure the file structure is as follows: Firefox > Profiles > [profile] > chrome > [css files]
-12. If you are on **Linux** open the `userChrome.css` file, If you are on **Windows** ignore this step.
+11. **Download** the `chrome.zip` file from the [**latest release**](https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar/releases/latest).
+12. **Extract** the contents of `chrome.zip` into your Firefox profile directory. Ensure the file structure is as follows: Firefox > Profiles > [profile] > chrome > [css files]
+13. If you are on **Linux** open the `userChrome.css` file, If you are on **Windows** ignore this step.
 - By default the window controls are set up for Windows, to change it for linux, simply **Uncomment**  `noTablineLinux.css` by removing the `/*` and `*/` on either end, then **Comment** out `noTablineWindows.css` by placing `/*` at the beginning and `*/` at the end.
 ```css
 @import "hideBookmarks.css";
 /*@import "noTablineWindows.css";*/
 @inpurt "noTablineLinux.css";
 ```
-13. **Restart** Firefox to apply the changes.
+14. **Restart** Firefox to apply the changes.
 
 ## Support & Suggestions
 
@@ -235,3 +162,6 @@ By default the Darker, Dark, and Light themes use colors picked from the [Catppu
 
 - [MaterialFox Updated](https://github.com/edelvarden/material-fox-updated) by [edelvarden](https://github.com/edelvarden) - Used README Markdown as Template
 - [Catppuccin Color Pallete](https://catppuccin.com/palette/) - Default colors used
+- [DownToneUI](https://github.com/oviung/DownToneUI-Firefox/tree/main) - Ideas for better installation instructions and things I could improve
+- [Firefox CSS Community](https://www.reddit.com/r/FirefoxCSS/) - Help with various bugs/ideas
+- [MrOtherGuy CSS hacks](https://github.com/MrOtherGuy/firefox-csshacks) - Css code ideas, not directly taken but referenced from
