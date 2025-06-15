@@ -8,7 +8,7 @@
 
 ## Preview
 
-![](https://i.imgur.com/qRjd5wI.gif)
+![](https://github.com/SakuraMeadows/Sakuras-Simple-Sidebar/blob/39908072a7fe102f91658d5df73ce24ad24d6290/page%20assets/SakurasSimpleSidebarExample.gif)
 
 ## Getting Started
 
