@@ -13,12 +13,14 @@
   background: var(--background-color) !important;
 }
 #urlbar{
-  background: ver(--background-color2) !important;
   color: var(--accent-color) !important;
+}
+#urlbar > #urlbar-background{
+  border-width: 2px !important;
   border-radius: 5px !important;
 }
-#urlbar:hover{
-  outline: 2px solid var(--accent-color) !important;
+#urlbar:hover > #urlbar-background{
+  border-color: var(--accent-color) !important;
   border-radius: 5px !important;
 }
 
@@ -32,6 +34,18 @@
   background-color: var(--background-color) !important;
   color: var(--accent-color) !important;
   border-color: var(--accent-color) !important;
+}
+menupopup:not(.in-menulist, .toolbar-menupopup, .toolbar-menupopup menupopup) {
+  menu,
+  menuitem {
+    &[_moz-menuactive]:not([disabled="true"]) {
+      background-color: var(--background-color3) !important;
+      color: var(--accent-color) !important;
+    }
+    &[_moz-menuactive][disabled="true"] {
+      background-color: var(--background-color2) !important;
+    }
+  }
 }
 
 /* Change Color of Selected Tab */
@@ -94,4 +108,14 @@ slot:hover{
 #urlbar-searchmode-switcher{
   background-color: var(--background-color2) !important;
   color: var(--accent-color) !important;
+}
+
+/* Change color of find bar */
+.browserContainer > findbar{
+  background-color: var(--background-color) !important;
+  color: var(--accent-color) !important;
+}
+.findbar-textbox{
+  border-color: var(--accent-color) !important;
+  background-color: var(--background-color2) !important;
 }

@@ -1,28 +1,47 @@
 /* Sidebar Expand on Hover, otherwise Shrink */
 #sidebar-box{
-    --sidebar-width: 40px;
+    --sidebar-normal-width: 40px;
     --sidebar-hover-width: 250px;
-    min-width: var(--sidebar-width) !important;
-    max-width: var(--sidebar-width) !important;
-    transition: all 200ms ease !important;
+    position: fixed !important;
+    left: 0 !important;
+    top: 40px !important;
+    bottom: 0 !important;
+    z-index: 900 !important;
+    min-width: var(--sidebar-normal-width) !important;
+    max-width: var(--sidebar-normal-width) !important;
+    transition: all 150ms 150ms ease-in-out !important;
 }
 #sidebar-box:hover{
     min-width: var(--sidebar-hover-width) !important;
     max-width: var(--sidebar-hover-width) !important;
 }
 #sidebar-splitter{
-  display: none !important;
+    display: none !important;
 }
 
 /* Curve between sidebar and navbar */
 :root:not([sizemode="fullscreen"]) .browserStack > browser{
-    clip-path: xywh(0 0 100% 100% round 9px);
+    margin-left: 40px !important;
+    transition: clip-path 150ms 150ms ease-in-out !important;
+    clip-path: xywh(0 0 100% 100% round 9px 0 0 0);
 }
-.browserContainer, .browserStack, #browser {
+:root:has(#sidebar-box:hover) .browserStack > browser{
+    transition: clip-path 150ms 150ms ease-in-out !important;
+    clip-path: xywh(210px 0 100% 100% round 9px 0 0 0);
+}
+:root:has(#navigator-toolbox:hover) .browserStack > browser{
+    transition: clip-path 150ms 150ms ease-in-out !important;
+    clip-path: xywh(0 28px 100% 100% round 9px 0 0 0);
+}
+.browserContainer, .browserStack, #browser{
     background-color: var(--background-color) !important;
 }
 
 /* Hide Sidebery Topbar */
 #sidebar-header{
   display: none !important;
+}
+
+.browserContainer > findbar{
+  margin-left: 40px !important;
 }

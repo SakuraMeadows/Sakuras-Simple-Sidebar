@@ -1,11 +1,25 @@
+/* Allow the bookmarks bar to overflow the toolbox */
+#navigator-toolbox{
+    position: relative !important;
+    overflow: visible !important;
+    z-index: 999 !important;
+}
+
 /* Hide bookmarks bar unless hovering */
 #PersonalToolbar{
+    position: absolute !important;
+    top: 100% !important;
+    left: 40px !important;
+    right: 0 !important;
     max-height: 0 !important;
     opacity: 0 !important;
     overflow: hidden !important;
-    transition: all 100ms ease 100ms !important;
+    z-index: 1000 !important;
+    pointer-events: auto !important;
+    transition: all 150ms 150ms ease-in-out !important;
 }
 #navigator-toolbox:hover #PersonalToolbar{
     max-height: 30px !important;
     opacity: 1 !important;
+    pointer-events: auto !important;
 }
