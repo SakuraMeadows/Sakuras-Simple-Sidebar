@@ -58,7 +58,7 @@ menupopup:not(.in-menulist, .toolbar-menupopup, .toolbar-menupopup menupopup) {
 }
 
 /* Change color of urlbar pupup background */
-#urlbar-background{
+.urlbar-background{
   background: var(--background-color) !important;
 }
 
