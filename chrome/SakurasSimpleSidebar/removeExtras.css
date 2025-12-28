@@ -16,3 +16,8 @@
 #navigator-toolbox{
     border-bottom: none !important;
 }
+
+/* Remove Private Browsing tag */
+.private-browsing-indicator-with-label{
+  display: none !important;
+}
